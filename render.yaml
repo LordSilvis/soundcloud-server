@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: soundcloud-dl
+    env: node
+    buildCommand: pip install yt-dlp && npm install
+    startCommand: node server.js
+    plan: free
